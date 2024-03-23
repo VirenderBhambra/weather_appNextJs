@@ -1,0 +1,13 @@
+/* .searchBox{
+    margin-left: 30px;
+} */
+
+.sb form{
+    display: flex;
+    gap:20px;
+}
+.sb button{
+    padding: 10px 20px;
+    /* color: #202B3B; */
+    background-color: #202B3B;
+}
