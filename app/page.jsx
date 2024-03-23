@@ -10,7 +10,9 @@ import { CurrentWeather } from "./Components/current";
 import { useAtomValue } from "jotai";
 import { placeAtom } from "./atoms";
 import { fetchPlaceData } from "./Components/utils/fetchData";
-
+import Stack from '@mui/material/Stack';
+import CircularProgress from '@mui/material/CircularProgress';
+import { Box } from "@mui/material";
 const key = process.env.NEXT_PUBLIC_API_KEY;
 
 export default function Home() {
@@ -24,8 +26,16 @@ export default function Home() {
     refetchInterval: 900000 * 4,
   });
 
-  if (isLoading) return <h1>Loading.....</h1>;
+  if (isLoading) return <div className={styles.loader}>
+    <Box sx={{ display: 'flex' }}>
+      <CircularProgress />
+    </Box>
+    Loading...
+  </div>;
 
+  if(!data) return <div className={styles.loader}>
+    Server Fetch Error, Please Reload..
+  </div>
   return (
     <main className={styles.main}>
       <Navbar />
