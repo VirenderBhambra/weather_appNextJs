@@ -24,7 +24,7 @@ export const SearchBar = () => {
       getData = setTimeout(async () => {
         const key = process.env.NEXT_PUBLIC_API_KEY;
         const data = await axios
-          .get(`http://api.weatherapi.com/v1/search.json?key=${key}&q=${query}`)
+          .get(`https://api.weatherapi.com/v1/search.json?key=${key}&q=${query}`)
           .then((res) => res.data);
         setSuggestions(data);
       }, 2000);
