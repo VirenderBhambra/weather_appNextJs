@@ -1,6 +1,6 @@
 .forecast{
     background-color: #202B3B;
-    width: 450px;
+    min-width: 450px;
     margin-top: 70px;
     border-radius: 10px;
     height: auto;
@@ -9,10 +9,14 @@
 .forecast h3{
     margin-bottom: 20px;
 }
+.day h4{
+    width: 100px;
+}
 .day{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* gap: 50px; */
     height: 70px;
     padding: 10px;
 }

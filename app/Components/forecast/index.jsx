@@ -52,7 +52,7 @@ export function Forcast() {
                   <h4>{info.day.mintemp_c}</h4>
                 </div>
                 {id !== 2 && (
-                  <Divider sx={{ bgcolor: "#273347", width: 420, height: 3 }} />
+                  <Divider sx={{ bgcolor: "#273347", maxWidth: 720, height: 3 }} />
                 )}
               </React.Fragment>
             );

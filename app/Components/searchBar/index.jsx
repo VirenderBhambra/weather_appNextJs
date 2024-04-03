@@ -27,7 +27,7 @@ export const SearchBar = () => {
     <div className={styles.sb}>
       <Box
         sx={{
-          width: 800,
+          maxWidth: 800,
           maxWidth: "100%",
           "& .MuiInputBase-input": {
             color: "white", // Change text color to white
