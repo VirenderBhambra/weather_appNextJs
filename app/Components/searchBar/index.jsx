@@ -32,7 +32,6 @@ export const SearchBar = () => {
     return () => clearTimeout(getData);
   }, [query]);
 
-  console.log(suggestions);
   async function handleChange(e) {
     setQuery(e.target.value);
   }
@@ -48,8 +47,6 @@ export const SearchBar = () => {
   function handleSuggestion(val) {
     setPlace(val);
     setSuggestions([]);
-      
-
   }
   return (
     <>

@@ -26,8 +26,12 @@
     scroll-behavior: smooth;
     scrollbar-width:thin;
     scrollbar-track-color: #202B3B ;
+    cursor: pointer;
 }
 .cross{
     position: absolute;
     right: 10px;
+}
+.suggested{
+    padding: 10px;
 }
