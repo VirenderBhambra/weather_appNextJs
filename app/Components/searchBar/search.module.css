@@ -11,3 +11,23 @@
     /* color: #202B3B; */
     background-color: #202B3B;
 }
+
+.suggest{
+    position: absolute;
+    max-height: 200px;
+    width: 545px;
+    z-index: 999;
+    top: 80px;
+    background: #202B3B;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y:auto;
+    line-height: 2;
+    scroll-behavior: smooth;
+    scrollbar-width:thin;
+    scrollbar-track-color: #202B3B ;
+}
+.cross{
+    position: absolute;
+    right: 10px;
+}

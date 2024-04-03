@@ -4,6 +4,7 @@
   min-width: 100vw;
   background-color:#0B131E ;
   padding: 20px 30px;
+  overflow:hidden;
 }
 .middle{
   display: flex;
